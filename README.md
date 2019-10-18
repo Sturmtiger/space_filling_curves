@@ -1,1 +1,1 @@
-Just run any module, enter the order number for the curve and enjoy.
+Just starn 'run.py' file, choose some curve and enter the order number for the curve and enjoy.
