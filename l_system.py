@@ -4,11 +4,11 @@ import turtle
 class LSystem:
     def __init__(self, curve_type, order_number):
         self.order_number = order_number
-        self.variables = curve_type.__dict__['VARIABLES']
-        self.constants = curve_type.__dict__['CONSTANTS']
-        self.theta = curve_type.__dict__['THETA']
-        self.production_rules = curve_type.__dict__['PRODUCTION_RULES']
-        self.axiom = curve_type.__dict__['AXIOM']
+        self.variables = curve_type.VARIABLES
+        self.constants = curve_type.CONSTANTS
+        self.theta = curve_type.THETA
+        self.production_rules = curve_type.PRODUCTION_RULES
+        self.axiom = curve_type.AXIOM
 
     def run(self):
         for char in self.__prepare():
